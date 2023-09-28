@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+*{
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+body{ /*Fuente del body*/
+    font-family: 'Poppins', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+.container{
+   max-width: 100%;
+}
+
+/* #1 Para otorgar propiedades a header*/
+.header{
+    padding-top: 5%;
+    background-image: url("fondo-header.jpg");
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #eff3f4;
+    padding: 130px 0 0 0;
+}
+/* #2 Para dar caracteristicas al menu container*/
+.menu{
+    background-color: #C70039;
+    position: absolute;
+    top:0px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 400;
+}
+/* #3 Para dar propiedades al logo*/
+.logo{
+    padding-left: 3%;
+    font-size: 25px;
+    color: #FF5733;
+    text-transform: uppercase;
+    font-weight: 800;
+    text-shadow:  2px 2px rgba(0, 0, 0, 0.5);
+}
+/* #4 Para posicionar menu*/
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+    padding-left: 10px;
+}
+/* #5 Para cambiar el estilo de las etiquetas de enlace "a" */
+.menu .navbar ul li a{
+    font-size: 100%;
+    padding: 20px;
+    color: whitesmoke;
+    display: block;
+}
+/* #6 animacion de botones*/
+.menu .navbar ul li a:hover{
+    color: #FFC300;
+}
+#menu{
+    display: none;
+}
+/* #7 Para otorgar caracteristicas al menu responsive icono*/
+.menu-icono{
+    width: 25px;
+}
+/* #8 Para otorgar caracteristicas al menu responsive icono pt2*/
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+/* #9 Otorgar propiedades a clase header-content*/
+.header-content{
+    padding-left: 3%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* #10 Otorgar propiedades a clase header-text*/
+.header-text{
+    flex-basis: 50%;
+    margin-right: 25px;
+}
+/* #11 Otorgar propiedades a span*/
+span{
+    color: whitesmoke;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 17px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5%;
+}
+ /* #11 */
+.header-text h1{
+    font-size: 70px;
+    text-transform: capitalize;
+    line-height: 1;
+    color: whitesmoke;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 35px;
+}
+/* #12 */
+.header-text p{
+    font-size: 17px;
+    color: whitesmoke;
+    background-color: #c70038c4;
+    border-radius: 5px;
+}
+/* #13 */
+.buttons{
+    display: flex;
+}
+/* #14 */
+.btn-1{
+    display: inline-block;
+    padding: 13px 25px;
+    background-color: #C70039;
+    margin-right: 15px;
+    color: #eff3f4;
+    text-transform: capitalize;
+    margin-bottom: 100px;
+    transition: all 400ms ease;
+}
+
+.btn-1:hover{
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.5);
+    background-color: #ed0043;
+    color: #FFC300;
+}
+
+/* Seccion del Main #19*/ 
+.servicios{
+    background-color: #eff3f469;
+    padding: 100px 0;
+    display: flex;
+    justify-content:space-between;
+}
+/* #16 */
+.ser-1{
+    flex-basis: calc(33.3% - 20px);
+    padding: 10px 15px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.5);
+    transition: all 400ms ease;
+}
+.ser-1:hover{
+    box-shadow: 5px 5px 24px #b7b7b7;
+}
+/* #17 */
+.b1{
+    background-color: #C70039;
+    margin-bottom: 1rem;
+}
+.b2{
+    background-color: #C70039;
+    margin-bottom: 1rem;
+}
+.b3{
+    background-color: #C70039;
+    margin-bottom: 1rem;
+}
+/* #18 */
+.ser-text{
+    flex-basis: 50%;
+    padding-bottom: 3%;
+    color: whitesmoke;
+    text-align: center;
+}
+.ser-text p{
+    border-radius: 3px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+/* #19 */
+.ser-text h3{
+    color: whitesmoke;
+    font-size: 100%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+/* #20 */
+.ser-text a{
+    color: whitesmoke;
+    display: inline-block;
+    padding: 3.5% 3% 4%;
+    background-color: #FF5733;
+    margin-right: 15px;
+    color: #eff3f4;
+    text-transform: capitalize;
+    margin-bottom: 100px;
+    transition: all 350ms ease;
+}
+.ser-text a:hover{
+    box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.5);
+    color: #ffeaf0;
+    background-color: #fe4a21;
+}
+/* #21 */
+.ser-img{
+    max-height: 200px;
+    height: 200px;
+    width: 100%;
+}
+/* #22 */
+.products{
+    background-color: #eff3f469;
+    padding: 0 10 50px;
+    text-align: center;
+
+}
+h2{
+    padding-top: 3%;
+    font-size: 48px;
+    color: black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.box-container{
+    margin-top: 55px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 10px;
+}
+.box{
+    border-top: 1px solid #C70039;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    background-color: #e7e7e7;
+    display: none;
+}
+
+.box:nth-child(1),
+.box:nth-child(2),
+.box:nth-child(3),
+.box:nth-child(4),
+.box:nth-child(5){
+    display: inline-block;
+}
+
+.box img{
+    height: 200px;
+}
+
+.product-text h3{
+    font-size: 20px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.product-text p{
+    margin-bottom: 25px;
+    color: #626262;
+}
+
+.btn-3, .btn-2{
+    background-color: #C70039;
+    margin-top: 100px;
+    display: inline-block;
+    padding: 11px 35px;
+    border-radius: 25px;
+    color: whitesmoke;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 400ms ease;
+}
+.ver-detalle:hover{
+    background-color: #ed0043;
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.5);
+    color: #FFC300;
+}
+.btn-2:hover{
+    background-color: #ed0043;
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.5);
+    color: #FFC300;
+}
+
+/*Section despues del main*/
+.testimonial{
+    background-color: #eff3f469;
+    padding: 180px 0;
+    text-align: center;
+    align-items: center;
+}
+
+.testimonial-content{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.testimonial h2{
+    border-style:calc(30% - 20px);
+}
+.testimonial-1{
+    flex-basis: calc(30% - 20px);
+    padding: 50px;
+    background-color: #adadad7d;
+    border-top: solid 1px #626262;
+    margin: 10px;
+}
+.testimonial-1 h4{
+    font-size: 17px;
+    color: #111419;
+}
+
+.testimonial-1 img{
+    width: 100%;
+    height: 200px;
+}
+.testimonial-1 p{
+    width: 100%;
+}
+
+/*Seccion del footer*/
+.footer{
+    background-color: #C70039;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+.link h3{
+    color: #000000;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.link a{
+    color: #AEAFAF;
+    display: block;
+    margin-bottom: 10px;
+}
+.link a:hover{
+    color: #0000FF;
+}
+
+/*Responsive*/
+
+@media (max-width:991px){
+    
+    .menu{
+        padding: 20px;
+    }
+
+    .menu label{
+        display: initial;
+    }
+
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #C70039;
+        display: none;
+    }
+
+    .menu .navbar ul li{
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .header{
+        padding: 50px 0 0 0;
+    }
+    .header-content{
+        padding: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .header-text{
+        justify-content: center;
+    }
+    .buttons{
+        justify-content: center;
+    }
+    .btn-1{
+        margin-bottom: 0;
+    }
+    .header-img{
+        display: none;
+    }
+    .servicios{
+        padding: 30px;
+        flex-direction: column;
+    }
+    .ser-1{
+        margin-bottom: 15px;
+    }
+    .products{
+        padding: 0 30px 30px 30px;
+    }
+    .testimonial{
+        padding: 30px;
+    }
+    .testimonial-content{
+        margin-top: 20px;
+        flex-direction: column;
+    }
+
+    .testimonial-1{
+        padding: 25px;
+        margin-bottom: 25px;
+    }
+
+    .footer{
+        padding: 30px;
+    }
+    .footer-content{
+        flex-direction: column;
+        text-align: center;
+    }
+}
